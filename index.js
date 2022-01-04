@@ -12,7 +12,7 @@ $(".answer.yes").click(function() {
   $(".puzzleEight").addClass("Eight");
   $(".puzzleEight").show();
   setTimeout(function() {
-           $(".Hint2").show();
+           $(".Hint1").show();
         }, 5000);
   setTimeout(function() {
            $(".Hint2").show();
