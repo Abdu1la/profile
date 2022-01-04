@@ -51,8 +51,8 @@ $(".answer.yes").click(function() {
 
       if (c === true) {
 
-        $(".puzzleHint").text("is an Introvert.");
-        $(".puzzleHint").addClass("large");
+        $(".puzzleHintQ").text("is an Introvert.");
+        $(".puzzleHintQ").addClass("large");
         setTimeout(function() {
           $(".miniGame").hide();
         }, 5000);
