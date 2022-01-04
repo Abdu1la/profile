@@ -1,4 +1,6 @@
 $(".puzzleWrap").hide();
+$(".Hint1").hide();
+$(".Hint2").hide();
 $(".puzzleEight").hide();
 let count = 0;
 let userAnswer = [];
@@ -9,6 +11,13 @@ $(".answer.yes").click(function() {
   $(".puzzleHintUnderline").addClass("Underline");
   $(".puzzleEight").addClass("Eight");
   $(".puzzleEight").show();
+  setTimeout(function() {
+           $(".Hint2").show();
+        }, 5000);
+  setTimeout(function() {
+           $(".Hint2").show();
+        }, 15000);
+ 
   $("span").click(function() {
 
     let clickedWord = $(this).text();
@@ -45,7 +54,7 @@ $(".answer.yes").click(function() {
         $(".puzzleHint").text("is an Introvert.");
         $(".puzzleHint").addClass("large");
         setTimeout(function() {
-          // $(".miniGame").hide();
+          $(".miniGame").hide();
         }, 5000);
 
       }
