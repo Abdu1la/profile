@@ -1,4 +1,4 @@
-/*=============================
+/*==============================
 
   Defaults
 
@@ -49,6 +49,46 @@ h4 {
   text-align: right;
 }
 
+h5 {
+  font-size: 3.5rem !important;
+  color: var(--dark-color);
+  font-family: 'Courier Prime';
+  padding:50px 0;
+  text-align: right;
+}
+
+.projects {
+  font-size: 7rem;
+  color: var(--grey-color);
+  font-family: 'Courier Prime';
+  font-weight: 800;
+  padding:0 30px 50px;
+  text-align: right;
+  margin-right: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.projects:hover{
+  font-size: 7.2rem;
+  filter: drop-shadow(0 4px 4px var(--grey-color));
+  margin-right: 0;
+  transition: all .3s ease-out;
+}
+
+.projects.blue:hover{
+  color: #0f73d1;
+}
+
+.projects.pink:hover{
+  color:#a43bd1;
+}
+
+.projects.gold:hover{
+  color:#7a553b;
+}
+
+
 p {
   font-family: 'Inconsolata';
   font-size: 3rem;
@@ -59,7 +99,7 @@ p {
 
 .page-content {
   padding: 50px;
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
   background-color: var(--light-color);
 }
@@ -335,11 +375,11 @@ Bottom Box
   margin: 50px 9px 0;
 }
 
-.puzzleHintQ,.puzzleHint {
+.puzzleHint {
   font-size: 26px;
   width: 80%;
   text-align: center;
-  padding: 7px 0;
+  padding-top: 7px;
   color: #000;
   ;
 }
@@ -423,36 +463,29 @@ h6 {
   color: #000;
 }
 
-/* .extraSkills:hover{
-  background-color: #000;
-}
 
-.skill-fill:hover > .skill-num{
-
-  color:#000;
-  font-size: 2.8rem;
-
-} */
 /* ---------------------------------
   Section Title
------------------------------------
+----------------------------------- */
 
-@media(max-width: 1200px) {
-  .section-titel h6 {
-    padding: 3px 8px;
-    letter-spacing: 2px;
-    font-size: 10px;
-  }
-  .section-titel h3 {
-    font-size: 35px;
-  }
+
+
+@media(min-width: 1500px) {
+.page-content,img{
+  max-width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+img{
+  width: 80%;
+}
 }
 
-@media(max-width: 991px) {
-  .section-titel h3 {
-    font-size: 30px;
-  }
-  .section-titel {
-    margin: 0 0 30px;
-  }
-} */
+@media(min-width: 1000px) {
+  img{
+  max-width: 90%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 25%;
+}
+}
